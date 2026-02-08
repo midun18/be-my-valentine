@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Madhumitha Rathinaswamy will you be my Valentine for life <3">
+  <meta name="description" content="Madhu — my favourite travel buddy, coffee date & tiramisu sharer. Will you be my Valentine?">
   <meta name="theme-color" content="#ffd0e5">
   <title>Valentine's Day</title>
   <script src="https://cdn.tailwindcss.com"></script>
@@ -45,11 +45,11 @@
       <img
         id="imageDisplay"
         src="./images/image1.jpg"
-        alt="I love you"
+        alt="You're my favourite adventure"
         class="rounded-md h-[300px] object-cover"
       />
-      <h1 id="valentineQuestion" class="text-4xl font-bold italic text-[#bd1e59] my-4">
-        Will you be my Valentine?
+      <h1 id="valentineQuestion" class="text-4xl font-bold italic text-[#bd1e59] my-4 text-center max-w-md mx-auto">
+        Madhuu — will you be my Valentine? (I’ll always save you the last bite of tiramisu)
       </h1>
       <div id="responseButtons" class="flex gap-4 pt-5 items-center">
         <button
@@ -94,20 +94,20 @@
 
       const NO_BUTTON_MESSAGES = [
         'Noooo',
-        'Are you sureeee?',
-        'Baby please :(((',
-        "Don't do this to me :(",
-        "You're breaking my hearttt",
-        "I'm gonna cry...",
+        'Not even for coffee? :(',
+        'What about our next trip together?',
+        "Who's gonna share my tiramisu?",
+        "You're my favourite adventure...",
+        "I'm gonna cry into my cold coffee...",
       ];
 
       const ALT_TEXTS = [
-        'I want to be your boyfriend',
-        'I love you',
-        'I miss you',
-        'I want you',
-        'I need you',
-        'I want you to be the mother of my kids :)))'
+        'I want to be your person',
+        'Every coffee tastes better with you',
+        'I want to see the world with you',
+        'You’re my favourite place to land',
+        'My heart only wants you',
+        'You’re the one I want next to me — forever'
       ];
 
       // State
@@ -141,7 +141,7 @@
       yesButton.addEventListener('click', () => {
         imageDisplay.src = IMAGE_PATHS[IMAGE_PATHS.length - 1];
         imageDisplay.alt = ALT_TEXTS[ALT_TEXTS.length - 1];
-        valentineQuestion.textContent = 'Yayyy!! :3';
+        valentineQuestion.textContent = 'Yayyyy!! I’ll always be your travel buddy, your coffee person & the one who saves you tiramisu. I love you 💕';
         responseButtons.style.display = 'none';
 
         // Heart-shaped confetti for a valentine theme
