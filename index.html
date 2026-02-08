@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Madhu — my favourite travel buddy, coffee date & tiramisu sharer. Will you be my Valentine?">
+  <meta name="description" content="Madhu — I love you. Will you be mine? My favourite travel buddy, coffee date & tiramisu sharer.">
   <meta name="theme-color" content="#ffd0e5">
-  <title>Valentine's Day</title>
+  <title>Madhuu, will you be mine?</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
   <style>
@@ -45,11 +45,11 @@
       <img
         id="imageDisplay"
         src="./images/image1.jpg"
-        alt="You're my favourite adventure"
+        alt="I love you"
         class="rounded-md h-[300px] object-cover"
       />
       <h1 id="valentineQuestion" class="text-4xl font-bold italic text-[#bd1e59] my-4 text-center max-w-md mx-auto">
-        Madhuu — will you be my Valentine? (I’ll always save you the last bite of tiramisu)
+        Madhuu — I love you. Will you be mine? (I’ll always save you the last bite of tiramisu)
       </h1>
       <div id="responseButtons" class="flex gap-4 pt-5 items-center">
         <button
@@ -94,20 +94,20 @@
 
       const NO_BUTTON_MESSAGES = [
         'Noooo',
-        'Not even for coffee? :(',
+        'Not even for me? :(',
         'What about our next trip together?',
         "Who's gonna share my tiramisu?",
-        "You're my favourite adventure...",
+        "You're the one I love...",
         "I'm gonna cry into my cold coffee...",
       ];
 
       const ALT_TEXTS = [
         'I want to be your person',
-        'Every coffee tastes better with you',
+        'Every coffee with you feels like home',
         'I want to see the world with you',
         'You’re my favourite place to land',
         'My heart only wants you',
-        'You’re the one I want next to me — forever'
+        'You’re the one I love'
       ];
 
       // State
@@ -141,10 +141,10 @@
       yesButton.addEventListener('click', () => {
         imageDisplay.src = IMAGE_PATHS[IMAGE_PATHS.length - 1];
         imageDisplay.alt = ALT_TEXTS[ALT_TEXTS.length - 1];
-        valentineQuestion.textContent = 'Yayyyy!! I’ll always be your travel buddy, your coffee person & the one who saves you tiramisu. I love you 💕';
+        valentineQuestion.textContent = 'Yes!! I’ll always be your travel buddy, your coffee person & the one who saves you tiramisu. I love you 💕';
         responseButtons.style.display = 'none';
 
-        // Heart-shaped confetti for a valentine theme
+        // Heart-shaped confetti for the proposal
         const heart = confetti.shapeFromPath({
           path: 'M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z',
         });
